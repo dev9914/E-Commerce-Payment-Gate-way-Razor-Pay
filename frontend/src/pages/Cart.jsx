@@ -155,7 +155,7 @@ const Cart = () => {
             </div>
             ):(
                 <div>
-                    <h1 className='text-3xl font-sans font-semibold ml-16'>Fetching ...</h1>
+                    <h1 className='text-3xl font-sans font-semibold ml-16'>Your cart is empty. Start shopping now!</h1>
                 </div>
             )}
 

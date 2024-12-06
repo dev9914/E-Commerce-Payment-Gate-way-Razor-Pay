@@ -57,6 +57,10 @@ const registerUser = asyncHandler(async (req, res) => {
     fullname
   });
 
+  const { accessToken} = await generateAccessAndRefreshTokens(
+    user._id
+  );
+
   const createdUser = await User.findById(user._id).select("-password -__v");
 
   if (!createdUser) {
@@ -65,7 +69,7 @@ const registerUser = asyncHandler(async (req, res) => {
 
   return res
     .status(201)
-    .json(new ApiResponse(200, createdUser, "User registered Successfully"));
+    .json(new ApiResponse(200, {createdUser, accessToken}, "User registered Successfully"));
 });
 
 const loginUser = asyncHandler(async (req, res) => {

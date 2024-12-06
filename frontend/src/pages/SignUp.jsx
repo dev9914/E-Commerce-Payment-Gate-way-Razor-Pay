@@ -44,13 +44,13 @@ const SignUp = () => {
         password:password,
         fullname:fullname
       })
-      localStorage.setItem('token', response.data.data.accessToken)
       setEmail('')
       setPassword('')
       setconfirmPassword('')
       setfullName('')
       setUsername('')
       setError('')
+      localStorage.setItem('token', response.data.data.accessToken)
       navigate('/dashboard')
       console.log(response.data)
     } catch (error) {

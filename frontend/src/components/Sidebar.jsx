@@ -90,12 +90,12 @@ const Sidebar = () => {
         <p className='cursor-pointer'><FiPlusSquare size={27}/></p>
         <p className='text-lg ml-2 font-sans font-semibold'>Upload Product</p>
           </Link>
+          </>
+        )}
           <Link className='flex' to='/dashboard/profile'>
         <p className='cursor-pointer'><CgProfile size={30} /></p>
         <p className='text-lg ml-2 font-sans font-semibold'>Profile</p>
           </Link>
-          </>
-        )}
         <p onClick={handleLogout} className='cursor-pointer absolute bottom-10'><CiLogout size={30}/></p>
       </div>
     </div>

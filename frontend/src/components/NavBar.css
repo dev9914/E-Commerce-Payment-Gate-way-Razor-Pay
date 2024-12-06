@@ -1,0 +1,14 @@
+.navb{
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.123);
+    height: 10vh;
+    background: linear-gradient(to bottom, #171518 0%, #1d181d 50%, #251b25 100%);
+}
+.button{
+    border: 0.5px solid rgba(255, 255, 255, 0.123);
+    width: 8vw;
+}
+
+.button:hover {
+    background-color: #202424; /* Keeps the same background color */
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.3); /* Faded gray shadow effect */
+  }

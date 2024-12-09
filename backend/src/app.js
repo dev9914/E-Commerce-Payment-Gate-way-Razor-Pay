@@ -17,7 +17,7 @@ const app = express();
 //   };
   
   app.use(cors({
-    origin: ['http://localhost:4000'],
+    origin: ['http://localhost:4000','https://e-commerce-payment-gate-way-razor-pay-u1l4.onrender.com'],
     methods:['GET,PATCH,POST,DELETE,PUT'],
     credentials: true,
   }
